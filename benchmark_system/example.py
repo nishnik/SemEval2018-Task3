@@ -63,7 +63,14 @@ DATASET_FP = "./SemEval2018-T4-train-taskA.txt"
 # FNAME = './predictions-task' + TASK + '.txt'
 # PREDICTIONSFILE = open(FNAME, "w")
 
+
 K_FOLDS = 10 # 10-fold crossvalidation
+
+# Dataset: SemEval2018-T4-train-taskA.txt or SemEval2018-T4-train-taskB.txt
+DATASET_FP = "./SemEval2018-T3-train-taskA.txt"
+TASK = "A" # Define, A or B
+FNAME = './predictions-task' + TASK + '.txt'
+PREDICTIONSFILE = open(FNAME, "w")
 
 # Loading dataset and featurised simple Tfidf-BoW model
 corpus, y = parse_dataset(DATASET_FP)
